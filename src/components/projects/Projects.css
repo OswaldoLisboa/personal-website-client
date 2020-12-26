@@ -1,0 +1,26 @@
+.projects-title {
+  color: var(--primary);
+  font-size: 3em;
+  text-align: center;
+}
+
+.full-list {
+  color: var(--primary);
+  font-size: 2em;
+  text-align: center;
+  margin: 50px;
+}
+
+.filter-tags {
+  margin-right: 5px;
+  color: var(--primary);
+}
+
+.dropdown {
+  border: none;
+  background-color: var(--light);
+  color: var(--primary);
+  font-family: 'JetBrains Mono', monospace;
+  box-shadow: 0px 0px 5px 1px var(--secondary);
+  vertical-align: middle;
+}

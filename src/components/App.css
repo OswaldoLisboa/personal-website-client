@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&family=Oswald:wght@500&family=Roboto:wght@500&display=swap');
+
+:root {
+  --primary: #2E64BB;
+  --secondary: #66C5ED;
+  --dark: #11213C;
+  --light: #F4F4F3;
+}
+
+.main-container {
+  font-family: 'JetBrains Mono', monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.content {
+  margin: 20vh 5% 5% 5%;
+  flex-grow: 1;
+}
+
+.title {
+  font-family: 'Oswald', sans-serif;
+}
+
+.button {
+  font-family: 'Roboto', sans-serif;
+}

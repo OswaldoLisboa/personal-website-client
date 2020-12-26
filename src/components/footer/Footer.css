@@ -1,0 +1,15 @@
+.footer {
+  background-color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 18vh;
+  min-height: 120px;
+}
+
+.copyright {
+  flex-shrink: 1;
+  text-align: center;
+  color: var(--light);
+  font-size: .7em;
+}

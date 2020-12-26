@@ -1,0 +1,26 @@
+.icons {
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.social-media-container {
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light);
+  transition: all .2s ease-in-out;
+  margin: 10px;
+}
+
+.social-media-container:hover {
+  transform: scale(1.2);
+}
+
+.icon {
+  fill: var(--primary);
+  border-radius: 100px;
+}
