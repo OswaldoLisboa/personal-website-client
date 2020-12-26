@@ -23,7 +23,7 @@
 .project-card {
   height: 100%;
   width: 100%;
-  opacity: 0%;
+  opacity: 0;
   transition: all .2s ease-in-out;
   background: var(--primary);
   padding: 5%;
@@ -38,7 +38,7 @@
 }
 
 .project-card:hover {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .project-card-title {

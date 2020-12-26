@@ -29,7 +29,6 @@ class Project extends React.Component {
 
     return (
       <div className="project-card-container">
-        {/* <img className="project-card-background-image" src={info.imgLink} alt={info[language].name}></img> */}
         <div className="project-card-background-image" style={this.state.backgroundStyle} alt={info[language].name}></div>
         <div className="project-card">
           <h1 className="project-card-title title">{info[language].name}</h1>

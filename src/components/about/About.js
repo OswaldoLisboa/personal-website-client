@@ -35,7 +35,7 @@ class About extends React.Component {
 
   render() {
     const language = this.context.language;
-    
+
     return (
       <div className="about">
         <div className="bio">
@@ -51,9 +51,9 @@ class About extends React.Component {
             {this.renderEducation()}
           </div>
         </div>
-        <Link className="download button" to={`${process.env.PUBLIC_URL}/cv/OswaldoLisboa_${language}.pdf`} target="_blank" download>
+        {/* <Link className="download button" to={`${process.env.PUBLIC_URL}/cv/OswaldoLisboa_${language}.pdf`} target="_blank" download>
           {aboutText[language].download}
-        </Link>
+        </Link> */}
       </div>
     )
   }
