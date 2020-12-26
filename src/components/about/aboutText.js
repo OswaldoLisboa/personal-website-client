@@ -6,7 +6,7 @@ const aboutText = {
     download: 'Download CV'
   },
   spanish: {
-    bio1: "Hola. Soy Oswaldo Lisboa un chico de 26 años de Brasil que ha estado viviendo en España desde hace 12 años. Desde que era un niño y solía mirar a mi tío arreglar su ordenador viejo en Recife, mi ciudad natal, he sentido una pasión por los ordenadores y tecnología, así que siempre sentí que una carrera como programador sería un paso natural en mi vida.",
+    bio1: "Hola. Soy Oswaldo Lisboa, un chico de 26 años de Brasil que ha estado viviendo en España desde hace 12 años. Desde que era un niño y solía mirar a mi tío arreglar su ordenador viejo en Recife, mi ciudad natal, he sentido una pasión por los ordenadores y tecnología, así que siempre sentí que una carrera como programador sería un paso natural en mi vida.",
     bio2: "Después de buscar sobre las distintas áreas de la informática, adquirí un profundo interés hacia el desarrollo web, creyendo firmemente que debería convertirme en desarrollador full stack, para construir aplicaciones web que ayuden a otras personas,  que es, en mi opinión, el principal objetivo de la tecnología.",
     education: 'Educación y Cursos',
     download: 'Descargar CV'
