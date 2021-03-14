@@ -28,6 +28,7 @@ class Projects extends React.Component {
   constructor() {
     super();
     this.state = {
+      loaded: false,
       projects: [],
       tags: []
     }
@@ -41,7 +42,7 @@ class Projects extends React.Component {
     try {
       const response = await fetch('https://ol-personal-website-server.herokuapp.com/projects');
       const data = await response.json();
-      this.setState({ projects: data.projects,  tags: data.tags });
+      this.setState({ projects: data.projects,  tags: data.tags, loaded: true });
     } catch(error) {
       console.log(error)
     }
@@ -57,10 +58,11 @@ class Projects extends React.Component {
 
   async onTagChange(event) {
     const tag = event.target.value;
+    this.setState({ loaded: false });
     try {
       const response = await fetch(`https://ol-personal-website-server.herokuapp.com/projects/${tag}`);
       const projects = await response.json();
-      this.setState({ projects });
+      this.setState({ projects, loaded: true });
     } catch (error) {
       console.log(error);
     }
@@ -77,6 +79,8 @@ class Projects extends React.Component {
           <option value="all" defaultValue>{projects.[language].all}</option>
           {this.renderTags()}
         </select>
+        <br/>
+        <img className="spinner" src={`${process.env.PUBLIC_URL}/img/loading/spinner.gif`} alt="Loading" style={{display: this.state.loaded ? 'none' : 'block'}}></img>
         <ProjectsList projects={this.state.projects}/>
       </div>
     );

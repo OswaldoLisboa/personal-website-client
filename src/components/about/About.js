@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import LanguageContext from '../../contexts/LanguageContext';
 import './About.css';
 import aboutText from './aboutText';
@@ -9,6 +9,7 @@ class About extends React.Component {
   constructor() {
     super();
     this.state = {
+      loaded: false,
       education: []
     }
   }
@@ -19,7 +20,7 @@ class About extends React.Component {
     try {
       const response = await fetch('https://ol-personal-website-server.herokuapp.com/about');
       const education = await response.json();
-      this.setState({ education });
+      this.setState({ education, loaded: true });
     } catch(error) {
       console.log(error)
     }
@@ -48,6 +49,7 @@ class About extends React.Component {
         <div className="education">
           <h1 className="section-title title">{aboutText[language].education}</h1>
           <div className="education-items">
+            <img className="spinner" src={`${process.env.PUBLIC_URL}/img/loading/spinner.gif`} alt="Loading" style={{display: this.state.loaded ? 'none' : 'block'}}></img>
             {this.renderEducation()}
           </div>
         </div>
